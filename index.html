@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Ecosystem Landing Page</title>
+    <meta name="description" content="One ecosystem for community, rewards and ownership.">
+    
+    <!-- React -->
+        <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+        <!-- Babel -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Lucide Icons -->
+        <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css">
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary: #4F46E5; /* Indigo 600 */
+            --primary-hover: #4338CA; /* Indigo 700 */
+            --bg-dark: #0f1219;
+            --disclaimer-bg: #ffcc00;
+        }
+    }
+    
+    body {
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    @layer utilities {
+        .text-gradient {
+            @apply bg-clip-text text-transparent bg-gradient-to-r from-[var(--primary)] to-purple-600;
+        }
+        .perspective-1000 {
+            perspective: 1000px;
+        }
+        .transform-3d {
+            transform-style: preserve-3d;
+        }
+    }
+
+    @tailwind utilities;
+
+    @layer utilities {
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-scroll {
+            animation: scroll 30s linear infinite;
+        }
+        .text-yellow-400
+        {
+            color: #4338CA;
+        }
+    }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <div id="root"></div>
+
+    <script type="text/babel" src="components/Navbar.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/Features.js"></script>
+    <script type="text/babel" src="components/AppPromo.js"></script>
+    <script type="text/babel" src="components/CoinNetwork.js"></script>
+    <script type="text/babel" src="components/Roadmap.js"></script>
+    <script type="text/babel" src="components/Featured.js"></script>
+    <script type="text/babel" src="components/FAQ.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="components/Disclaimer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
