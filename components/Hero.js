@@ -12,19 +12,14 @@ const Hero = () => {
                         <div className="inline-flex items-center gap-2 text-sm font-semibold tracking-wider text-[var(--primary)] uppercase mb-6 bg-[var(--primary)]/10 px-4 py-2 rounded-full">
                             Community • Rewards • Wallet
                         </div>
-                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight lg:leading-[1.1] mb-5 text-center lg:text-left">
-    One ecosystem for
-    <br className="hidden sm:block" />
-    <span className="text-[var(--primary)]">
-        community, rewards
-    </span>
-    <br className="hidden sm:block" />
-    and <span className="text-[var(--primary)]">ownership.</span>
-</h1>
-
-<p className="text-base sm:text-lg text-slate-600 leading-7 max-w-lg mx-auto lg:mx-0 mb-8 text-center lg:text-left px-2 sm:px-0">
-    Participate, earn rewards and manage your digital assets through one simple experience.
-</p>
+                        <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.1] mb-6">
+                            One ecosystem for <br/>
+                            <span className="text-[var(--primary)]">community, rewards</span><br/>
+                            and <span className="text-[var(--primary)]">ownership.</span>
+                        </h1>
+                        <p className="text-lg text-slate-600 mb-8 max-w-xl mx-auto lg:mx-0">
+                            Participate, earn rewards and manage your digital assets through one simple experience.
+                        </p>
                         
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">
                             <button className="w-full sm:w-auto bg-[var(--primary)] hover:bg-[var(--primary-hover)] text-white px-8 py-3.5 rounded-lg font-medium transition-colors flex items-center justify-center gap-2">
