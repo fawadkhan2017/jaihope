@@ -5,13 +5,13 @@ const Navbar = () => {
 
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
-            <div className="max-w-7xl mx-auto px-6 lg:px-[60px]">
+            <div className="max-w-7xl mx-auto px-2 sm:px-6 md:px-8 lg:px-[60px]">
                 <div className="flex justify-between items-center h-20">
 
                     {/* Logo */}
                     <div className="flex-shrink-0 flex items-center cursor-pointer">
                         <img
-                            src="assets/img/blacklogo.png"
+                            src="assets/img/logo.png"
                             alt="JaihoPe"
                             className="h-12 md:h-16 w-auto"
                         />

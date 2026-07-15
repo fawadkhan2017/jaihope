@@ -1,22 +1,38 @@
 const Footer = () => {
     return (
         <footer className="bg-[#0f1219] text-white pt-20 pb-8" data-name="Footer" data-file="components/Footer.js">
-            <div className="max-w-7xl mx-auto px-[60px]">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 mb-16">
+            <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-8 lg:px-[60px]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-10 lg:gap-12 mb-16">
                     <div className="lg:col-span-2">
                         <div className="flex items-center gap-2 mb-6">
-                        <img src="assets/img/whitelogo.png" alt="JaihoPe" className="h-[8rem] w-auto"/>
+                        <img src="assets/img/1000073946.png" alt="JaihoPe" className="h-[8rem] w-auto"/>
                         </div>
-                        <p className="text-slate-400 text-sm mb-6 max-w-sm leading-relaxed">
+                        <p className="text-slate-400 text-sm mb-8 max-w-sm leading-relaxed text-center lg:text-left mx-auto lg:mx-0">
                             A community-first Web3 ecosystem where participation is rewarded and every action creates value.
                         </p>
-                        <div className="flex gap-4">
-                            <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--primary)] transition-colors"><div className="icon-twitter text-lg"></div></a>
-                            <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--primary)] transition-colors"><div className="icon-send text-lg"></div></a>
-                            <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--primary)] transition-colors"><div className="icon-disc text-lg"></div></a>
-                            <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--primary)] transition-colors"><div className="icon-mail text-lg"></div></a>
-                            <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--primary)] transition-colors"><div className="icon-youtube text-lg"></div></a>
-                        </div>
+                        <div className="flex items-center justify-center lg:justify-start gap-4">
+
+    <a href="#" className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#229ED9] transition-all">
+        <i className="fa-brands fa-telegram text-xl"></i>
+    </a>
+
+    <a href="#" className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#1877F2] transition-all">
+        <i className="fa-brands fa-facebook-f text-xl"></i>
+    </a>
+
+    <a href="#" className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-black transition-all">
+        <i className="fa-brands fa-x-twitter text-xl"></i>
+    </a>
+
+    <a href="#" className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#25D366] transition-all">
+        <i className="fa-brands fa-whatsapp text-xl"></i>
+    </a>
+
+    <a href="#" className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#FF0000] transition-all">
+        <i className="fa-brands fa-youtube text-xl"></i>
+    </a>
+
+</div>
                     </div>
                     
                     <div>
@@ -72,7 +88,7 @@ const Footer = () => {
                     </div>
                 </div>
                 
-                <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+                <div className="border-t border-white/10 pt-8 flex flex-col lg:flex-row items-center justify-between gap-6 text-center lg:text-left text-xs text-slate-500">
                     <p>© 2026 JaihoPe. All rights reserved.</p>
                     <div className="flex items-center gap-6">
                         <span>Community Driven</span>

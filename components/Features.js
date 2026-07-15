@@ -1,7 +1,7 @@
 const Features = () => {
     return (
         <section id="ecosystem" className="pb-[3rem] bg-white" data-name="Features" data-file="components/Features.js">
-            <div className="max-w-7xl mx-auto px-[60px]">
+            <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-8 lg:px-[60px]">
                 <div className="text-center mb-16">
                     <span className="text-xs font-bold tracking-wider text-[var(--primary)] uppercase mb-2 block">One Ecosystem. Endless Possibilities</span>
                     <h2 className="text-4xl font-bold text-slate-900">Everything you need, in one ecosystem.</h2>

@@ -1,7 +1,7 @@
 const CoinNetwork = () => {
     return (
         <section id="network" className="pt-[2rem] pb-[1rem] bg-white" data-name="CoinNetwork" data-file="components/CoinNetwork.js">
-            <div className="max-w-7xl mx-auto px-[60px]">
+            <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-8 lg:px-[60px]">
                 <div className="flex flex-col lg:flex-row gap-12 lg:gap-8 items-start">
                     
                     {/* Left Column */}

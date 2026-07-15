@@ -16,20 +16,23 @@ const Featured = () => {
 
     return (
         <section className="py-20 bg-slate-50 border-t border-b border-slate-200 overflow-hidden" data-name="Featured" data-file="components/Featured.js">
-            <div className="max-w-7xl mx-auto px-[60px] mb-12">
+            <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-8 lg:px-[60px] mb-12">
                 <h2 className="text-3xl font-bold text-center text-[#0f1219]">Featured at</h2>
             </div>
             
             <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
                 <div className="flex items-center justify-center md:justify-start gap-8 animate-scroll w-max">
                     {doubledLogos.map((logo, index) => (
-                        <div key={index} className="bg-white rounded-full px-8 py-4 shadow-sm border border-slate-100 flex items-center justify-center w-[220px] h-[80px] flex-shrink-0 hover:shadow-md transition-shadow">
-                            <img 
-                                src={logo.url} 
-                                alt={logo.name} 
-                                className="max-h-[50px] w-auto object-contain"
-                            />
-                        </div>
+                        <div
+                        key={index}
+                        className="group bg-white rounded-full px-8 py-4 shadow-sm border border-slate-100 flex items-center justify-center w-[220px] h-[80px] flex-shrink-0 hover:shadow-md transition-all duration-300"
+                    >
+                        <img
+                            src={logo.url}
+                            alt={logo.name}
+                            className="max-h-[55px] w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                        />
+                    </div>
                     ))}
                 </div>
             </div>
