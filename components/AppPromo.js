@@ -35,22 +35,31 @@ const AppPromo = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-wrap gap-4">
-                            <button className="bg-slate-900 text-white px-5 py-3 rounded-xl flex items-center gap-3 hover:bg-slate-800 transition-colors">
-                                <div className="icon-play text-2xl"></div>
-                                <div className="text-left">
-                                    <div className="text-[10px] text-slate-300">GET IT ON</div>
-                                    <div className="text-sm font-semibold">Google Play</div>
-                                </div>
-                            </button>
-                            <button className="bg-slate-900 text-white px-5 py-3 rounded-xl flex items-center gap-3 hover:bg-slate-800 transition-colors">
-                                <div className="icon-apple text-2xl"></div>
-                                <div className="text-left">
-                                    <div className="text-[10px] text-slate-300">Download on the</div>
-                                    <div className="text-sm font-semibold">App Store</div>
-                                </div>
-                            </button>
-                        </div>
+                        <div className="flex flex-nowrap gap-3 w-full sm:w-auto">
+    <button className="flex-1 sm:flex-none bg-slate-900 text-white px-3 sm:px-5 py-3 rounded-xl flex items-center justify-center gap-2 sm:gap-3 hover:bg-slate-800 transition-colors">
+        <div className="icon-play text-xl sm:text-2xl"></div>
+        <div className="text-left">
+            <div className="text-[9px] sm:text-[10px] text-slate-300">
+                GET IT ON
+            </div>
+            <div className="text-xs sm:text-sm font-semibold">
+                Google Play
+            </div>
+        </div>
+    </button>
+
+    <button className="flex-1 sm:flex-none bg-slate-900 text-white px-3 sm:px-5 py-3 rounded-xl flex items-center justify-center gap-2 sm:gap-3 hover:bg-slate-800 transition-colors">
+        <div className="icon-apple text-xl sm:text-2xl"></div>
+        <div className="text-left">
+            <div className="text-[9px] sm:text-[10px] text-slate-300">
+                Download on the
+            </div>
+            <div className="text-xs sm:text-sm font-semibold">
+                App Store
+            </div>
+        </div>
+    </button>
+</div>
                     </div>
                     
                     <div className="flex justify-center items-center relative z-10 w-full max-w-md lg:max-w-none perspective-1000">
