@@ -13,7 +13,7 @@ function FAQ() {
     ];
 
     return (
-        <section className="py-24 bg-slate-50 relative" data-name="faq" data-file="components/FAQ.js">
+        <section className="py-8 bg-slate-50 relative" data-name="faq" data-file="components/FAQ.js">
             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">Frequently Asked Questions</h2>

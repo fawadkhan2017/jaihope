@@ -15,7 +15,7 @@ const Featured = () => {
     const doubledLogos = [...logos, ...logos];
 
     return (
-        <section className="py-20 bg-slate-50 border-t border-b border-slate-200 overflow-hidden" data-name="Featured" data-file="components/Featured.js">
+        <section className="py-8 bg-slate-50 border-t border-b border-slate-200 overflow-hidden" data-name="Featured" data-file="components/Featured.js">
             <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-8 lg:px-[60px] mb-12">
                 <h2 className="text-3xl font-bold text-center text-[#0f1219]">Featured at</h2>
             </div>
