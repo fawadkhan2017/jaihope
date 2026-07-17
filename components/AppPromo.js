@@ -1,129 +1,136 @@
-const AppPromo = () => {
+function AppPromo() {
     return (
-        <section className="py-24 bg-slate-50 relative overflow-hidden" data-name="AppPromo" data-file="components/AppPromo.js">
-            <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-8 lg:px-[60px]">
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 items-center">
-                    <div>
-                        <p className="text-xs font-bold tracking-widest text-[var(--primary)] uppercase mb-4">Designed for everyone</p>
-                        <h2 className="text-4xl font-extrabold text-slate-900 mb-8 leading-tight">Your all-in-one<br />Web3 app.</h2>
+        <section id="app-promo" className="py-24 bg-white relative overflow-hidden" data-name="AppPromo">
+            <div className="max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-8">
+                <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-8 xl:gap-12">
+                    
+                    {/* Left Column: Features */}
+                    <div className="flex-1 max-w-xl lg:max-w-sm xl:max-w-md w-full order-2 lg:order-1">
+                        <div className="text-sm font-bold tracking-widest text-[var(--primary)] uppercase mb-4">
+                            Designed for everyone
+                        </div>
+                        <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
+                            Your all-in-one <br/>
+                            <span className="text-[var(--primary)]">Web3</span> app.
+                        </h2>
+                        <p className="text-lg text-slate-600 mb-10">
+                            Everything you need. Community, rewards and wallet — all in one place.
+                        </p>
+
                         <div className="space-y-8 mb-10">
+                            {/* Feature 1 */}
                             <div className="flex gap-4">
-                                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[var(--primary)]/10 flex items-center justify-center text-[var(--primary)] mt-1">
-                                    <div className="icon-circle-check"></div>
+                                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-[var(--primary)]/10 flex items-center justify-center text-[var(--primary)]">
+                                    <div className="icon-circle-check text-2xl"></div>
                                 </div>
                                 <div>
-                                    <h4 className="text-lg font-bold text-slate-900 mb-1">Everything in one place</h4>
-                                    <p className="text-slate-500 text-sm leading-relaxed">Community, rewards and wallet in one connected experience.</p>
+                                    <h3 className="text-lg font-bold text-slate-900 mb-1">Everything in one place</h3>
+                                    <p className="text-slate-600">Community, rewards and wallet in one connected experience.</p>
                                 </div>
                             </div>
+                            {/* Feature 2 */}
                             <div className="flex gap-4">
-                                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-500 mt-1">
-                                    <div className="icon-smartphone"></div>
+                                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-[var(--primary)]/10 flex items-center justify-center text-[var(--primary)]">
+                                    <div className="icon-smartphone text-2xl"></div>
                                 </div>
                                 <div>
-                                    <h4 className="text-lg font-bold text-slate-900 mb-1">Simple and intuitive</h4>
-                                    <p className="text-slate-500 text-sm leading-relaxed">Easy to use for beginners, powerful for everyone.</p>
+                                    <h3 className="text-lg font-bold text-slate-900 mb-1">Simple and intuitive</h3>
+                                    <p className="text-slate-600">Easy to use for beginners, powerful for everyone.</p>
                                 </div>
                             </div>
+                            {/* Feature 3 */}
                             <div className="flex gap-4">
-                                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-500 mt-1">
-                                    <div className="icon-shield-check"></div>
+                                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-[var(--primary)]/10 flex items-center justify-center text-[var(--primary)]">
+                                    <div className="icon-shield-check text-2xl"></div>
                                 </div>
                                 <div>
-                                    <h4 className="text-lg font-bold text-slate-900 mb-1">Transparent by default</h4>
-                                    <p className="text-slate-500 text-sm leading-relaxed">All rewards and transactions verified on-chain.</p>
+                                    <h3 className="text-lg font-bold text-slate-900 mb-1">Transparent by default</h3>
+                                    <p className="text-slate-600">All rewards and transactions verified on-chain.</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-nowrap gap-3 w-full sm:w-auto">
-    <button className="flex-1 sm:flex-none bg-slate-900 text-white px-3 sm:px-5 py-3 rounded-xl flex items-center justify-center gap-2 sm:gap-3 hover:bg-slate-800 transition-colors">
-        <div className="icon-play text-xl sm:text-2xl"></div>
-        <div className="text-left">
-            <div className="text-[9px] sm:text-[10px] text-slate-300">
-                GET IT ON
-            </div>
-            <div className="text-xs sm:text-sm font-semibold">
-                Google Play
-            </div>
-        </div>
-    </button>
 
-    <button className="flex-1 sm:flex-none bg-slate-900 text-white px-3 sm:px-5 py-3 rounded-xl flex items-center justify-center gap-2 sm:gap-3 hover:bg-slate-800 transition-colors">
-        <div className="icon-apple text-xl sm:text-2xl"></div>
-        <div className="text-left">
-            <div className="text-[9px] sm:text-[10px] text-slate-300">
-                Download on the
-            </div>
-            <div className="text-xs sm:text-sm font-semibold">
-                App Store
-            </div>
-        </div>
-    </button>
-</div>
-                    </div>
-                    
-                    <div className="flex justify-center items-center relative z-10 w-full max-w-md lg:max-w-none perspective-1000">
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-[var(--primary)]/20 blur-3xl rounded-full z-0"></div>
-                        <div
-    className="relative mx-auto w-[320px]   overflow-hidden transition-all duration-700 hover:rotate-0 z-10 scale-90 lg:scale-100"
->
-    {/* iPhone Dynamic Island */}
-    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-40 h-6 rounded-b-3xl z-20"></div>
-
-    {/* App Screenshot */}
-    <img
-        src="assets/img/app-screen2.png"
-        alt="JaihoPe App"
-        className="w-full h-full object-cover"
-    />
-
-    {/* Gloss Effect */}
-    <div className="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent pointer-events-none z-30"></div>
-</div>
-                    </div>
-                    
-                    <div className="space-y-6">
-                        <div className="bg-gradient-to-br from-[var(--primary)] to-purple-600 rounded-3xl p-6 text-white shadow-xl shadow-[var(--primary)]/20">
-                            <p className="text-sm font-medium opacity-90 mb-1">Staking Rewards</p>
-                            <h3 className="text-3xl font-extrabold mb-1">100,000</h3>
-                            <p className="text-xs opacity-80 mb-6">JAIHO</p>
-                            <button className="bg-white text-[var(--primary)] w-full py-3 rounded-xl font-bold hover:bg-slate-50 transition-colors flex justify-center items-center gap-2">
-                                Stake Now <div className="icon-arrow-right text-sm"></div>
+                        <div className="flex flex-wrap gap-4">
+                            <button className="flex items-center gap-2 bg-slate-900 text-white px-2 py-3 rounded-xl hover:bg-slate-800 transition-colors">
+                                <i className="fa-brands fa-google-play text-2xl"></i>
+                                <div className="text-left">
+                                    <div className="text-[10px] uppercase tracking-wider text-slate-300">Get it on</div>
+                                    <div className="text-sm font-semibold">Google Play</div>
+                                </div>
+                            </button>
+                            <button className="flex items-center gap-3 bg-slate-900 text-white px-6 py-3 rounded-xl hover:bg-slate-800 transition-colors">
+                                <i className="fa-brands fa-apple text-2xl"></i>
+                                <div className="text-left">
+                                    <div className="text-[10px] uppercase tracking-wider text-slate-300">Download on the</div>
+                                    <div className="text-sm font-semibold">App Store</div>
+                                </div>
                             </button>
                         </div>
-                        
-                        <div className="bg-white rounded-3xl p-6 shadow-lg border border-slate-100">
-                            <div className="flex justify-between items-center mb-6">
-                                <h4 className="font-bold text-slate-900">Daily Check-in</h4>
-                                <span className="bg-orange-100 text-[var(--primary)] text-xs font-bold px-2 py-1 rounded-md">Day 5</span>
-                            </div>
-                            <div className="flex justify-between mb-4">
-                                {[1, 2, 3, 4, 5, 6, 7].map((day) => (
-                                    <div key={day} className="flex flex-col items-center gap-2">
-                                        <div className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold ${
-                                            day < 5 ? 'bg-[var(--primary)] text-white icon-check' :
-                                            day === 5 ? 'bg-[var(--primary)] text-white icon-check border-2 border-orange-200' :
-                                            'bg-slate-100 text-slate-400 icon-check'
-                                        }`}></div>
-                                    </div>
-                                ))}
-                            </div>
-                            <p className="text-xs font-bold text-slate-800">You're on a streak!</p>
-                            <p className="text-xs text-slate-500">Keep it going to earn more rewards.</p>
-                        </div>
-                        
-                        <div className="bg-white rounded-3xl p-6 shadow-lg border border-slate-100 flex items-center justify-between">
-                            <div>
-                                <h4 className="font-bold text-slate-900 text-sm mb-1">Referral Reward</h4>
-                                <p className="text-xs text-slate-500">You and your friend<br />both earn 100 JAIHO</p>
-                            </div>
-                            <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600">
-                                <div className="icon-users text-xl"></div>
-                            </div>
-                        </div>
                     </div>
+
+                    {/* Center Column: App Mockup */}
+                    <div className="flex-1 flex justify-center w-full max-w-sm lg:max-w-[320px] xl:max-w-sm shrink-0 order-1 lg:order-2">
+                        <img
+                            src="../assets/img/app-screen2.png"
+                            alt="JaihoPe App Interface"
+                            className="w-full h-auto drop-shadow-[0_20px_50px_rgba(79,70,229,0.3)] hover:scale-105 transition-transform duration-500"
+                        />
+                    </div>
+
+                    {/* Right Column: Stats Ecosystem */}
+                    <div className="flex-1 w-full max-w-xl lg:max-w-sm xl:max-w-md bg-white rounded-[2rem] border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-6 sm:p-8 order-3">
+                        <div className="text-xs font-bold tracking-widest text-[var(--primary)] uppercase mb-2">
+                            Live Ecosystem
+                        </div>
+                        <h3 className="text-2xl font-bold text-slate-900 mb-2">Ecosystem at a Glance</h3>
+                        <p className="text-slate-500 text-sm mb-8">Real-time stats from the JaiHo ecosystem</p>
+
+                        <div className="grid grid-cols-2 gap-4 mb-8">
+                            {/* Stat 1 */}
+                            <div className="bg-slate-50/50 rounded-2xl p-5 text-center border border-slate-100 hover:border-[var(--primary)]/30 transition-colors">
+                                <div className="w-10 h-10 mx-auto bg-[var(--primary)]/10 text-[var(--primary)] rounded-full flex items-center justify-center mb-4">
+                                    <div className="icon-database text-xl"></div>
+                                </div>
+                                <div className="text-xs text-slate-600 font-medium mb-2">Total Staked</div>
+                                <div className="text-xl sm:text-2xl xl:text-3xl font-bold text-[var(--primary)] mb-1">125.4M</div>
+                                <div className="text-[10px] sm:text-xs text-slate-500 font-bold uppercase tracking-wider">JAIHO</div>
+                            </div>
+                            {/* Stat 2 */}
+                            <div className="bg-slate-50/50 rounded-2xl p-5 text-center border border-slate-100 hover:border-[var(--primary)]/30 transition-colors">
+                                <div className="w-10 h-10 mx-auto bg-[var(--primary)]/10 text-[var(--primary)] rounded-full flex items-center justify-center mb-4">
+                                    <div className="icon-chart-line text-xl"></div>
+                                </div>
+                                <div className="text-xs text-slate-600 font-medium mb-2">Buyback Completed</div>
+                                <div className="text-xl sm:text-2xl xl:text-3xl font-bold text-[var(--primary)] mb-1">12.8M</div>
+                                <div className="text-[10px] sm:text-xs text-slate-500 font-bold uppercase tracking-wider">JAIHO</div>
+                            </div>
+                            {/* Stat 3 */}
+                            <div className="bg-slate-50/50 rounded-2xl p-5 text-center border border-slate-100 hover:border-[var(--primary)]/30 transition-colors">
+                                <div className="w-10 h-10 mx-auto bg-[var(--primary)]/10 text-[var(--primary)] rounded-full flex items-center justify-center mb-4">
+                                    <div className="icon-gift text-xl"></div>
+                                </div>
+                                <div className="text-xs text-slate-600 font-medium mb-2">Today's Prize Pool</div>
+                                <div className="text-xl sm:text-2xl xl:text-3xl font-bold text-[var(--primary)] mb-1">85,000</div>
+                                <div className="text-[10px] sm:text-xs text-slate-500 font-bold uppercase tracking-wider">JAIHO</div>
+                            </div>
+                            {/* Stat 4 */}
+                            <div className="bg-slate-50/50 rounded-2xl p-5 text-center border border-slate-100 hover:border-[var(--primary)]/30 transition-colors">
+                                <div className="w-10 h-10 mx-auto bg-[var(--primary)]/10 text-[var(--primary)] rounded-full flex items-center justify-center mb-4">
+                                    <div className="icon-users text-xl"></div>
+                                </div>
+                                <div className="text-xs text-slate-600 font-medium mb-2">Active Stakers</div>
+                                <div className="text-xl sm:text-2xl xl:text-3xl font-bold text-[var(--primary)] mb-1">3,210+</div>
+                                <div className="text-[10px] sm:text-xs text-slate-500 font-bold uppercase tracking-wider">JAIHO</div>
+                            </div>
+                        </div>
+
+                        <button className="w-full bg-[var(--primary)] text-white py-4 rounded-xl font-semibold flex items-center justify-center gap-2 hover:bg-[var(--primary-hover)] transition-colors shadow-lg shadow-[var(--primary)]/20">
+                            Explore Ecosystem <div className="icon-arrow-right"></div>
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </section>
     );
-};
+}

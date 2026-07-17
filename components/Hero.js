@@ -18,7 +18,7 @@ const Hero = () => {
                             and <span className="text-[var(--primary)]">ownership.</span>
                         </h1>
                         <p className="text-lg text-slate-600 mb-8 max-w-xl mx-auto lg:mx-0">
-                            Participate, earn rewards and manage your digital assets through one simple experience.
+                            Participate, earn rewards and manage your<br></br> digital assets through one simple experience.
                         </p>
                         
                         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">

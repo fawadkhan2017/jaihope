@@ -1,137 +1,137 @@
 const CoinNetwork = () => {
     return (
-        <section id="network" className="pt-[2rem] pb-[1rem] bg-white" data-name="CoinNetwork" data-file="components/CoinNetwork.js">
-            <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-8 lg:px-[60px]">
-                <div className="flex flex-col lg:flex-row gap-12 lg:gap-8 items-start">
+        <section id="network" className="py-24 bg-slate-50" data-name="CoinNetwork" data-file="components/CoinNetwork.js">
+        <div className="max-w-[1400px] mx-auto px-5 sm:px-6 md:px-8">
+            <div className="flex flex-col gap-12 lg:gap-8">
+                
+                {/* Top Row: Left Header & Right Tokenomics Panel */}
+                <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center lg:items-center">
                     
                     {/* Left Column */}
-                    <div className="lg:w-1/3 flex-shrink-0">
-                        <span className="text-xs font-bold tracking-wider text-[var(--primary)] uppercase mb-4 block">THE COIN NETWORK</span>
-                        <h2 className="text-4xl font-extrabold text-slate-900 mb-6 leading-tight">The utility layer<br/>of the ecosystem.</h2>
-                        <p className="text-slate-600 leading-relaxed mb-8">
-                            The Coin Network powers rewards, participation and utility across the entire ecosystem with transparency and security.
-                        </p>
-                        <div className="flex flex-col sm:flex-row items-center gap-3">
-                            <button className="w-full sm:w-auto bg-[var(--primary)] text-white px-3 py-3 rounded-lg font-bold hover:bg-[var(--primary-hover)] transition-colors flex items-center justify-center gap-2 shadow-md shadow-[var(--primary)]/20">
-                                View Token Details <div className="icon-arrow-right text-sm"></div>
-                            </button>
-                            <button className="w-full sm:w-auto text-[var(--primary)] font-bold px-3 py-3 flex items-center justify-center gap-2 hover:bg-slate-50 rounded-lg transition-colors">
-                                View Explorer <div className="icon-arrow-right text-sm"></div>
-                            </button>
-                        </div>
+                    <div className="lg:w-[35%] flex flex-col items-center justify-center text-center">
+                        <img 
+                            src="https://app.trickle.so/storage/app/IMG_20260717_030059_593.jpg" alt="Token Logo" className="w-40 h-40 rounded-full shadow-[0_0_40px_rgba(74,27,217,0.2)] mb-8 border-4 border-[#4a1bd9]/10 object-cover"/>
+                        <h2 style={{"paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px","marginTop":"0px","marginRight":"0px","marginBottom":"8px","marginLeft":"0px","fontSize":"38px","color":"rgb(15, 23, 42)","backgroundColor":"rgba(0, 0, 0, 0)","textAlign":"left","fontWeight":"600","objectFit":"fill","display":"block","position":"static","top":"auto","left":"auto","right":"auto","bottom":"auto"}} className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-2">Powered by Utility.</h2>
+                        <h2 style={{"paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px","marginTop":"0px","marginRight":"0px","marginBottom":"24px","marginLeft":"0px","fontSize":"38px","color":"rgb(15, 23, 42)","backgroundColor":"rgba(0, 0, 0, 0)","textAlign":"center","fontWeight":"600","objectFit":"fill","display":"block","position":"static","top":"auto","left":"auto","right":"auto","bottom":"auto"}} className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">Owned by <span className="text-[#4a1bd9]">Community.</span></h2>
+                        <p style={{"paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px","marginTop":"0px","marginRight":"0px","marginBottom":"0px","marginLeft":"0px","fontSize":"18px","color":"rgb(100, 116, 139)","backgroundColor":"rgba(0, 0, 0, 0)","textAlign":"center","fontWeight":"500","objectFit":"fill","display":"block","position":"static","top":"auto","left":"auto","right":"auto","bottom":"auto"}} className="text-lg text-slate-500 font-medium max-w-sm">A Web3 ecosystem for real rewards and real-world use.</p>
                     </div>
                     
-                    {/* Right Column / Large Card */}
-                    <div className="lg:w-2/3 w-full">
-                        <div className="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden">
-                            {/* Top Section */}
-                            <div className="p-8 flex flex-col md:flex-row gap-8 border-b border-slate-100 items-center md:items-start">
-                                {/* Token Logo */}
-                                <div className="flex flex-col items-center text-center">
-                                    <div className="w-24 h-24 rounded-full bg-orange-500 flex items-center justify-center text-white text-5xl mb-4 shadow-lg shadow-orange-500/30">
-                                        <div className="icon-hand-metal"></div>
-                                    </div>
-                                    <h3 className="font-bold text-slate-900">COIN NETWORK</h3>
-                                    <p className="text-xs text-slate-500 mt-1">Utility • Governance • Rewards</p>
-                                </div>
-                                
-                                {/* Supply Stats */}
-                                <div className="flex-1 grid grid-cols-1 sm:grid-cols-3 gap-6 w-full mt-4 md:mt-0">
-                                    <div>
-                                        <p className="text-xs font-semibold text-slate-500 mb-1">Total Supply</p>
-                                        <p className="text-2xl font-bold text-slate-900 mb-1">250,000,000</p>
-                                        <p className="text-xs text-slate-400">Fixed</p>
-                                    </div>
-                                    <div>
-                                        <p className="text-xs font-semibold text-slate-500 mb-1">Circulating Supply</p>
-                                        <p className="text-2xl font-bold text-slate-900 mb-1">250,000,000</p>
-                                        <p className="text-xs text-slate-400">100%</p>
-                                    </div>
-                                    <div>
-                                        <p className="text-xs font-semibold text-slate-500 mb-1">Token Holders</p>
-                                        <p className="text-2xl font-bold text-slate-900 mb-1">5,210+</p>
-                                        <p className="text-xs text-slate-400">On-chain</p>
-                                    </div>
-                                </div>
+                    {/* Tokenomics Panel */}
+                    <div className="lg:w-[65%] w-full">
+                        <div className="bg-white rounded-3xl border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-8 md:p-10 flex flex-col justify-center h-full">
+                            <div className="flex items-center gap-3 mb-10">
+                                <div className="w-1.5 h-6 bg-[#4a1bd9] rounded-full"></div>
+                                <h3 className="font-bold text-slate-900 tracking-wider">TOKENOMICS</h3>
                             </div>
                             
-                            {/* Token Utility Features */}
-                            <div className="p-8">
-                                <p className="text-xs font-bold text-slate-900 mb-6">Token Utility</p>
-                                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
-                                    <div className="flex flex-col items-center bg-slate-50 border border-slate-100 p-4 rounded-2xl hover:shadow-md hover:border-slate-200 transition-all cursor-default">
-                                        <div className="w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center text-[var(--primary)] mb-3">
-                                            <div className="icon-users text-xl"></div>
-                                        </div>
-                                        <span className="text-[10px] font-bold text-slate-700">Community<br/>Rewards</span>
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                                {/* Stat 1 */}
+                                <div className="flex flex-col items-center">
+                                    <div className="w-14 h-14 rounded-full bg-[#4A1BD91A] flex items-center justify-center text-[#4a1bd9] mb-5">
+                                        <div className="icon-database text-2xl"></div>
                                     </div>
-                                    <div className="flex flex-col items-center bg-slate-50 border border-slate-100 p-4 rounded-2xl hover:shadow-md hover:border-slate-200 transition-all cursor-default">
-                                        <div className="w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center text-orange-500 mb-3">
-                                            <div className="icon-gift text-xl"></div>
-                                        </div>
-                                        <span className="text-[10px] font-bold text-slate-700">Weekly<br/>Prize Pools</span>
+                                    <p className="text-sm font-semibold text-slate-700 mb-3">Total Supply</p>
+                                    <p className="text-3xl font-extrabold text-slate-900 mb-5">250M</p>
+                                    <span className="px-5 py-1.5 bg-[#4a1bd9]/10 text-[#4a1bd9] text-xs font-bold rounded-full w-full max-w-[120px]">Fixed</span>
+                                </div>
+                                {/* Stat 2 */}
+                                <div className="flex flex-col items-center">
+                                    <div className="w-14 h-14 rounded-full bg-[#4A1BD91A] flex items-center justify-center text-[#4a1bd9] mb-5">
+                                        <div className="icon-refresh-cw text-2xl"></div>
                                     </div>
-                                    <div className="flex flex-col items-center bg-slate-50 border border-slate-100 p-4 rounded-2xl hover:shadow-md hover:border-slate-200 transition-all cursor-default">
-                                        <div className="w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center text-blue-500 mb-3">
-                                            <div className="icon-user-plus text-xl"></div>
-                                        </div>
-                                        <span className="text-[10px] font-bold text-slate-700">Referral<br/>Rewards</span>
+                                    <p className="text-sm font-semibold text-slate-700 mb-3">Circulating Supply</p>
+                                    <p className="text-3xl font-extrabold text-slate-900 mb-5">100%</p>
+                                    <span className="px-5 py-1.5 bg-[#4a1bd9]/10 text-[#4a1bd9] text-xs font-bold rounded-full w-full max-w-[120px]">In Circulation</span>
+                                </div>
+                                {/* Stat 3 */}
+                                <div className="flex flex-col items-center">
+                                    <div className="w-14 h-14 rounded-full bg-[#4A1BD91A] flex items-center justify-center text-[#4a1bd9] mb-5">
+                                        <div className="icon-lock text-2xl"></div>
                                     </div>
-                                    <div className="flex flex-col items-center bg-slate-50 border border-slate-100 p-4 rounded-2xl hover:shadow-md hover:border-slate-200 transition-all cursor-default">
-                                        <div className="w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center text-purple-500 mb-3">
-                                            <div className="icon-layers text-xl"></div>
-                                        </div>
-                                        <span className="text-[10px] font-bold text-slate-700">Staking<br/>Rewards</span>
+                                    <p className="text-sm font-semibold text-slate-700 mb-3">Max Supply</p>
+                                    <p className="text-3xl font-extrabold text-slate-900 mb-5">Fixed</p>
+                                    <span className="px-5 py-1.5 bg-[#4a1bd9]/10 text-[#4a1bd9] text-xs font-bold rounded-full w-full max-w-[120px]">No Inflation</span>
+                                </div>
+                                {/* Stat 4 */}
+                                <div className="flex flex-col items-center">
+                                    <div className="w-14 h-14 rounded-full bg-[#4A1BD91A] flex items-center justify-center text-[#4a1bd9] mb-5">
+                                        <div className="icon-ban text-2xl"></div>
                                     </div>
-                                    <div className="flex flex-col items-center bg-slate-50 border border-slate-100 p-4 rounded-2xl hover:shadow-md hover:border-slate-200 transition-all cursor-default">
-                                        <div className="w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center text-green-500 mb-3">
-                                            <div className="icon-wallet text-xl"></div>
-                                        </div>
-                                        <span className="text-[10px] font-bold text-slate-700">Payments &<br/>Utilities</span>
-                                    </div>
-                                    <div className="flex flex-col items-center bg-slate-50 border border-slate-100 p-4 rounded-2xl hover:shadow-md hover:border-slate-200 transition-all cursor-default">
-                                        <div className="w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center text-rose-500 mb-3">
-                                            <div className="icon-shopping-bag text-xl"></div>
-                                        </div>
-                                        <span className="text-[10px] font-bold text-slate-700">Merchandise<br/>& More</span>
-                                    </div>
+                                    <p className="text-sm font-semibold text-slate-700 mb-3">Minting</p>
+                                    <p className="text-3xl font-extrabold text-slate-900 mb-5">Disabled</p>
+                                    <span className="px-5 py-1.5 bg-[#4a1bd9]/10 text-[#4a1bd9] text-xs font-bold rounded-full w-full max-w-[120px]">Permanently</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                {/* Bottom Row - Features */}
-                <div className="bg-slate-50 rounded-2xl p-8 mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div className="flex gap-4">
-                        <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[var(--primary)] flex-shrink-0 shadow-sm">
-                            <div className="icon-shield-check text-xl"></div>
+
+                {/* Bottom Row: Feature Cards */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+                    {/* Card 1 */}
+                    <div className="bg-white rounded-3xl border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-8 relative group hover:border-[#4a1bd9]/30 transition-colors cursor-default">
+                        <div className="w-12 h-12 rounded-xl bg-[#4A1BD91A] flex items-center justify-center text-[#4a1bd9] mb-6">
+                            <div className="icon-gift text-2xl"></div>
                         </div>
-                        <div>
-                            <h4 className="font-bold text-[var(--primary)] text-sm mb-1">Secure by design</h4>
-                            <p className="text-xs text-slate-500 leading-relaxed">Smart contracts audited and infrastructure secured.</p>
-                        </div>
-                    </div>
-                    <div className="flex gap-4">
-                        <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[var(--primary)] flex-shrink-0 shadow-sm">
-                            <div className="icon-link text-xl"></div>
-                        </div>
-                        <div>
-                            <h4 className="font-bold text-[var(--primary)] text-sm mb-1">On-chain transparency</h4>
-                            <p className="text-xs text-slate-500 leading-relaxed">All key actions and rewards verified on-chain.</p>
+                        <h4 className="text-2xl font-bold text-slate-900 mb-6">Earn</h4>
+                        <ul className="space-y-4 text-sm font-medium text-slate-600 mb-8">
+                            <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 bg-slate-400 rounded-full"></span> Stake</li>
+                            <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 bg-slate-400 rounded-full"></span> Invite Friends</li>
+                            <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 bg-slate-400 rounded-full"></span> Earn Rewards</li>
+                        </ul>
+                        <div className="absolute bottom-6 right-6 w-10 h-10 rounded-full bg-[#4a1bd9]/10 flex items-center justify-center text-[#4a1bd9] group-hover:bg-[#4a1bd9] group-hover:text-white transition-colors cursor-pointer">
+                            <div className="icon-arrow-right text-base"></div>
                         </div>
                     </div>
-                    <div className="flex gap-4">
-                        <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-[var(--primary)] flex-shrink-0 shadow-sm">
-                            <div className="icon-users text-xl"></div>
+                    
+                    {/* Card 2 */}
+                    <div className="bg-white rounded-3xl border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-8 relative group hover:border-[#4a1bd9]/30 transition-colors cursor-default">
+                        <div className="w-12 h-12 rounded-xl bg-[#4A1BD91A] flex items-center justify-center text-[#4a1bd9] mb-6">
+                            <div className="icon-credit-card text-2xl"></div>
                         </div>
-                        <div>
-                            <h4 className="font-bold text-[var(--primary)] text-sm mb-1">Community first</h4>
-                            <p className="text-xs text-slate-500 leading-relaxed">Built for the community, governed by the community.</p>
+                        <h4 className="text-2xl font-bold text-slate-900 mb-6">Spend</h4>
+                        <ul className="space-y-4 text-sm font-medium text-slate-600 mb-8">
+                            <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 bg-slate-400 rounded-full"></span> Recharge</li>
+                            <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 bg-slate-400 rounded-full"></span> Gift Cards</li>
+                            <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 bg-slate-400 rounded-full"></span> Merch</li>
+                        </ul>
+                        <div className="absolute bottom-6 right-6 w-10 h-10 rounded-full bg-[#4a1bd9]/10 flex items-center justify-center text-[#4a1bd9] group-hover:bg-[#4a1bd9] group-hover:text-white transition-colors cursor-pointer">
+                            <div className="icon-arrow-right text-base"></div>
+                        </div>
+                    </div>
+
+                    {/* Card 3 */}
+                    <div className="bg-white rounded-3xl border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-8 relative group hover:border-[#4a1bd9]/30 transition-colors cursor-default">
+                        <div className="w-12 h-12 rounded-xl bg-[#4A1BD91A] flex items-center justify-center text-[#4a1bd9] mb-6">
+                            <div className="icon-users text-2xl"></div>
+                        </div>
+                        <h4 className="text-2xl font-bold text-slate-900 mb-6">Build</h4>
+                        <ul className="space-y-4 text-sm font-medium text-slate-600 mb-8">
+                            <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 bg-slate-400 rounded-full"></span> Community</li>
+                            <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 bg-slate-400 rounded-full"></span> Governance</li>
+                        </ul>
+                        <div className="absolute bottom-6 right-6 w-10 h-10 rounded-full bg-[#4a1bd9]/10 flex items-center justify-center text-[#4a1bd9] group-hover:bg-[#4a1bd9] group-hover:text-white transition-colors cursor-pointer">
+                            <div className="icon-arrow-right text-base"></div>
+                        </div>
+                    </div>
+
+                    {/* Card 4 */}
+                    <div className="bg-white rounded-3xl border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-8 relative group hover:border-[#4a1bd9]/30 transition-colors cursor-default">
+                        <div className="w-12 h-12 rounded-xl bg-[#4A1BD91A] flex items-center justify-center text-[#4a1bd9] mb-6">
+                            <div className="icon-shield-check text-2xl"></div>
+                        </div>
+                        <h4 className="text-2xl font-bold text-slate-900 mb-6">Secure</h4>
+                        <ul className="space-y-4 text-sm font-medium text-slate-600 mb-8">
+                            <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 bg-slate-400 rounded-full"></span> Wallet</li>
+                            <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 bg-slate-400 rounded-full"></span> Self-Custody</li>
+                        </ul>
+                        <div className="absolute bottom-6 right-6 w-10 h-10 rounded-full bg-[#4a1bd9]/10 flex items-center justify-center text-[#4a1bd9] group-hover:bg-[#4a1bd9] group-hover:text-white transition-colors cursor-pointer">
+                            <div className="icon-arrow-right text-base"></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     );
 };
