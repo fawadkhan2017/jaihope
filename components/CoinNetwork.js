@@ -1,6 +1,6 @@
 const CoinNetwork = () => {
     return (
-        <section id="network" className="py-24 bg-slate-50" data-name="CoinNetwork" data-file="components/CoinNetwork.js">
+        <section id="network" className="py-24 bg-slate-50 bg-white" data-name="CoinNetwork" data-file="components/CoinNetwork.js">
         <div className="max-w-[1400px] mx-auto px-5 sm:px-6 md:px-8">
             <div className="flex flex-col gap-12 lg:gap-8">
                 
