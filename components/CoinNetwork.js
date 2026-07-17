@@ -1,6 +1,6 @@
 const CoinNetwork = () => {
     return (
-        <section id="network" className="py-24 bg-slate-50 bg-white" data-name="CoinNetwork" data-file="components/CoinNetwork.js">
+        <section id="network" className="py-8 bg-slate-50 bg-white" data-name="CoinNetwork" data-file="components/CoinNetwork.js">
         <div className="max-w-[1400px] mx-auto px-5 sm:px-6 md:px-8">
             <div className="flex flex-col gap-12 lg:gap-8">
                 
@@ -10,7 +10,7 @@ const CoinNetwork = () => {
                     {/* Left Column */}
                     <div className="lg:w-[35%] flex flex-col items-center justify-center text-center">
                         <img 
-                            src="https://app.trickle.so/storage/app/IMG_20260717_030059_593.jpg" alt="Token Logo" className="w-40 h-40 rounded-full shadow-[0_0_40px_rgba(74,27,217,0.2)] mb-8 border-4 border-[#4a1bd9]/10 object-cover"/>
+                            src="../assets/img/IMG_20260717_030059_593.jpg" alt="Token Logo" className="w-40 h-40 rounded-full shadow-[0_0_40px_rgba(74,27,217,0.2)] mb-8 border-4 border-[#4a1bd9]/10 object-cover"/>
                         <h2 style={{"paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px","marginTop":"0px","marginRight":"0px","marginBottom":"8px","marginLeft":"0px","fontSize":"38px","color":"rgb(15, 23, 42)","backgroundColor":"rgba(0, 0, 0, 0)","textAlign":"left","fontWeight":"600","objectFit":"fill","display":"block","position":"static","top":"auto","left":"auto","right":"auto","bottom":"auto"}} className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-2">Powered by Utility.</h2>
                         <h2 style={{"paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px","marginTop":"0px","marginRight":"0px","marginBottom":"24px","marginLeft":"0px","fontSize":"38px","color":"rgb(15, 23, 42)","backgroundColor":"rgba(0, 0, 0, 0)","textAlign":"center","fontWeight":"600","objectFit":"fill","display":"block","position":"static","top":"auto","left":"auto","right":"auto","bottom":"auto"}} className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">Owned by <span className="text-[#4a1bd9]">Community.</span></h2>
                         <p style={{"paddingTop":"0px","paddingRight":"0px","paddingBottom":"0px","paddingLeft":"0px","marginTop":"0px","marginRight":"0px","marginBottom":"0px","marginLeft":"0px","fontSize":"18px","color":"rgb(100, 116, 139)","backgroundColor":"rgba(0, 0, 0, 0)","textAlign":"center","fontWeight":"500","objectFit":"fill","display":"block","position":"static","top":"auto","left":"auto","right":"auto","bottom":"auto"}} className="text-lg text-slate-500 font-medium max-w-sm">A Web3 ecosystem for real rewards and real-world use.</p>

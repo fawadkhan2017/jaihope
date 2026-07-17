@@ -59,11 +59,11 @@ const Featured = () => {
                     {/* Avatars */}
                     <div className="flex flex-wrap items-center justify-center mb-12">
                         <div className="flex -space-x-4">
-                            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=100&h=100&fit=crop&crop=faces" alt="Member" className="w-16 h-16 rounded-full border-4 border-white shadow-sm relative z-50 object-cover" />
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces" alt="Member" className="w-16 h-16 rounded-full border-4 border-white shadow-sm relative z-40 object-cover" />
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces" alt="Member" className="w-16 h-16 rounded-full border-4 border-white shadow-sm relative z-30 object-cover" />
-                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=faces" alt="Member" className="w-16 h-16 rounded-full border-4 border-white shadow-sm relative z-20 object-cover" />
-                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=faces" alt="Member" className="w-16 h-16 rounded-full border-4 border-white shadow-sm relative z-10 object-cover" />
+                            <img src="../assets/img/photo-1539571696357-5a69c17a67c6?w=100&h=100&fit=crop&crop=faces" alt="Member" className="w-16 h-16 rounded-full border-4 border-white shadow-sm relative z-50 object-cover" />
+                            <img src="../assets/img/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces" alt="Member" className="w-16 h-16 rounded-full border-4 border-white shadow-sm relative z-40 object-cover" />
+                            <img src="../assets/img/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces" alt="Member" className="w-16 h-16 rounded-full border-4 border-white shadow-sm relative z-30 object-cover" />
+                            <img src="../assets/img/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=faces" alt="Member" className="w-16 h-16 rounded-full border-4 border-white shadow-sm relative z-20 object-cover" />
+                            <img src="../assets/img/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=faces" alt="Member" className="w-16 h-16 rounded-full border-4 border-white shadow-sm relative z-10 object-cover" />
                         </div>
                         <div className="w-16 h-16 rounded-full border-2 border-dashed border-slate-300 bg-white flex flex-col items-center justify-center relative z-0 ml-4">
                             <span className="text-[var(--primary)] font-bold text-sm leading-tight">30K+</span>

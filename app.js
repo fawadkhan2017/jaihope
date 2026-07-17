@@ -38,8 +38,9 @@ const App = () => {
             <main className="flex-grow">
                 <Hero />
                 <Features />
-                <AppPromo />
                 <CoinNetwork />
+                <AppPromo />
+                
                 <Roadmap />
                 <Featured />
                 <FAQ />
